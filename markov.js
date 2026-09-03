@@ -62,10 +62,4 @@ class MarkovGenerator {
     }
 }
 
-const gen = new MarkovGenerator(3);
-
-gen.setData("The funny dog is a funny cat that is a funny fish. ");
-
-gen.setPrompt("The ");
-
-console.log(gen.getFullConvo(500));
+export { MarkovGenerator };

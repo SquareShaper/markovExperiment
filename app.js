@@ -7,21 +7,9 @@ function capitalize(text) {
     return capitalizedSentences;
 }
 
-let gen = new markovGen("The dog is a waifu. The cat is a fish. The fish is a husbando. This is a fish. Who are you?");
+import { MarkovGenerator } from "./markov";
 
-let prompt = "The dog is the"
+let gen = new MarkovGenerator(3);
 
-gen.addPrompt(prompt);
+gen.setData("The funny dog is a funny fish and a funny cat. ")
 
-let response = "";
-let responseLength = 10;
-for (let i = 0; i < responseLength; i++) {
-    response += gen.getNext();
-}
-
-// response = capitalize(response);
-
-console.log("Result for prompt: " + prompt);
-console.log(prompt + response);
-
-// console.log(capitalize("the fish is a cat. the dog is alive. "));
