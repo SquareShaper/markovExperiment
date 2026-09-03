@@ -44,7 +44,7 @@ class MarkovGenerator {
     }
 
     generate(number) {
-        let output = ""
+        let output = "";
         for (let i = 0; i < number; i++) {
             if (this.canGetNext()) {
                 output += this.getNext();
