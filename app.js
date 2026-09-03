@@ -15,7 +15,7 @@ let data = "According to all known laws of aviation, there is no way a bee shoul
 
 gen.setData(data);
 
-gen.setPrompt("According");
+gen.setPrompt("According to");
 
 console.log(gen.getFullConvo(1000));
 

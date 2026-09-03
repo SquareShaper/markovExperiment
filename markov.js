@@ -34,7 +34,7 @@ class MarkovGenerator {
     }
 
     canGetNext() {
-        return this.ngrams[this.generator].length > 0;
+        return this.ngrams[this.generator] != undefined && this.ngrams[this.generator].length > 0;
     }
 
     getNext() {
