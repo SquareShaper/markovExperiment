@@ -58,7 +58,7 @@ class MarkovGenerator {
 
     getFullConvo(number) {
         let response = this.generate(number);
-        return this.prompt + response.trim();
+        return this.prompt + response;
     }
 }
 

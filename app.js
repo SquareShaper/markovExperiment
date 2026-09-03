@@ -7,9 +7,12 @@ function capitalize(text) {
     return capitalizedSentences;
 }
 
-import { MarkovGenerator } from "./markov";
+import { MarkovGenerator } from "./markov.js";
 
 let gen = new MarkovGenerator(3);
 
 gen.setData("The funny dog is a funny fish and a funny cat. ")
 
+gen.setPrompt("The dog is");
+
+console.log(gen.getFullConvo(200));
