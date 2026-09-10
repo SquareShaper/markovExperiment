@@ -49,6 +49,6 @@ You can also call:
 ```js
 gen.generate(amount);
 ```
-For generating an `amount` of words/text upto the specified words/letters without your prompt at the start. 
+For generating an `amount` of words/text up to the specified words/letters without your prompt at the start. 
 
 For example usage, check app.js. 
