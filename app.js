@@ -18,5 +18,3 @@ gen.setData(data);
 gen.setPrompt("According to all");
 
 console.log(gen.getFullConvo(100));
-
-console.log()
