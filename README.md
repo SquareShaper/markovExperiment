@@ -6,7 +6,7 @@ The university wanted to make me communicate with an LLM, so I made a SLM - Stup
 
 Simply get the markovWords.js or markov.js file, and add:
 ```js
-import { MarkovGenerator } from "./markov.js";
+import { MarkovGenerator } from "./markovWords.js";
 ```
 
 at the top of your js file. 
