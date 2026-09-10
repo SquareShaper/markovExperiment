@@ -35,7 +35,7 @@ Finally, set a prompt and you're ready to generate new text:
 
 ```js
 
-gen.setPrompt("According to");
+gen.setPrompt("According to all");
 
 
 ```
