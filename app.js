@@ -7,7 +7,7 @@ function capitalize(text) {
     return capitalizedSentences;
 }
 
-import { MarkovGenerator } from "./markov.js";
+import { MarkovGenerator } from "./markovWords.js";
 
 let gen = new MarkovGenerator(3);
 
@@ -15,8 +15,8 @@ let data = "According to all known laws of aviation, there is no way a bee shoul
 
 gen.setData(data);
 
-gen.setPrompt("According to");
+gen.setPrompt("According to all");
 
-console.log(gen.getFullConvo(1000));
+console.log(gen.getFullConvo(100));
 
 console.log()
